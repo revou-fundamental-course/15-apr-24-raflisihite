@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Konversi Suhu</title>
+</head>
+<body>
+    <main>
+        <!-- section judul -->
+        <header class="main-title">
+            <h1>Konversi Suhu by Raafli</h1>
+        </header>
+        
+       
+        <section class="main-section">
+             <!-- section intro -->
+            <section >
+                <p>Masukkan Suhu Derajat Celcius (&deg;C) ke kotak dibawah, lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit atau sebaliknya dengan klik tombol reverse(&deg;F)</p>
+            </section>
+    
+            <!-- Suhu awal -->
+            <section class="celcius-sec">
+                <header>
+                    <h3 id="suhuAwal">Celcius (&deg;C) :</h3>
+                </header>
+    
+                <article>
+                    <textarea rows="3" id="suhuCelcius"></textarea>
+                    <div>
+                        <button type="button" onclick="konSuhu()">Konversi</button>
+                        <button type="button" onclick="resetAll()">Reset</button>
+                        <button type="button" onclick="reverse()">Reverse</button>
+                    </div>
+                    <div>
+                        <p id="peringatan"></p>
+                    </div>
+
+                </article>
+            </section>
+
+            <!-- Suhu kedua -->
+            <section class="fahren-sec">
+                <header>
+                    <h3 id="suhuKedua">Fahrenheit (&deg;F) :</h3>
+                </header>
+    
+                <article>
+                    <textarea disabled rows="3" id="outputSuhu"></textarea>
+                </article>
+            </section>
+
+            <!-- result -->
+            <section class="result-sec">
+                <header>
+                    <h3>Cara kalkulasi :</h3>
+                </header>
+    
+                <article>
+                    <textarea disabled rows="6" id="caraKalkulasi"></textarea>
+                </article>
+            </section>
+            <br>
+            <button class="astext" onclick="reverse()" id="stateKonversiSuhu" > Fahrenheit ke Celcius</button>
+
+            <!-- rumus fahrenheit -->
+            <section class="rumus-sec" id="newF">
+                <header>
+                    <h3>Cara Konversi Celcius (&deg;C) Ke Fahrenheit (&deg;F)</h3>
+                </header>
+                <hr>
+                <article>
+                    <p>
+                        Suhu <sf>S</sf> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <sf>S</sf> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32. 
+
+                    </p>
+                    <h1 class="formula">
+                        S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> * 9/5) + 32
+                    </h1>
+                    <h4>atau</h4>
+                    <h1 class="formula">
+                        S<sub>(&deg;F)</sub> = (S<sub>(&deg;C)</sub> * 1.8) + 32 
+                    </h1>
+                </article>
+            </section>
+
+            <!-- rumus celcius  -->
+            <section class="rumus-sec" id="newC">
+                <header>
+                    <h3>Cara Konversi Fahrenheit (&deg;F) Ke Celcius (&deg;C)</h3>
+                </header>
+                <hr>
+                <article>
+                    <p>
+                        Suhu <sf>S</sf> dalam derajat Celcius (&deg;C) sama dengan suhu <sf>S</sf> dalam derajat Fahrenheit (&deg;C) dikurang 32 kali 5/9. 
+
+                    </p>
+                    <h1 class="formula">
+                        S<sub>(&deg;C)</sub> = (S<sub>(&deg;F)</sub> -32) * 5/9
+                    </h1>
+                </article>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

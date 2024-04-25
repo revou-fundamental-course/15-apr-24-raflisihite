@@ -1,0 +1,71 @@
+
+main {
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 64px;
+    padding-bottom: 64pfx;
+}
+
+.main-title {
+    text-align: center;
+}
+
+.main-section {
+    padding: 16px;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+.celcius-sec {
+    padding-top: 16px;
+}
+
+.fahren-sec {
+    padding-top: 16px;
+}
+
+.result-sec {
+    padding-top: 16px;
+}
+
+.rumus-sec {
+    padding-top: 16px;
+}
+
+textarea {
+    width: 80%;
+    resize: none;
+}
+
+sf {
+    font-size: 20px;
+    font-style: italic; 
+}
+
+.formula {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.formula>sub {
+    font-style: normal;
+}
+
+#peringatan {
+    color: red;
+}
+
+.astext {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+    color: blue;
+}
+
+#newF { display: block; }
+#newF.active { display: none; }
+
+#newC { display: none; }
+#newC.active { display: block; }
